@@ -1,0 +1,19 @@
+{
+  "name": "the-cra-curse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwkeay/the-cra-curse.git"
+  },
+  "author": "Michael Keay",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mwkeay/the-cra-curse/issues"
+  },
+  "homepage": "https://github.com/mwkeay/the-cra-curse#readme"
+}
