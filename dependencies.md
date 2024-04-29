@@ -32,6 +32,7 @@ This document breaks down the Node modules used in the example environment.
     "@babel/preset-env": "^7.24.4",
     "@babel/preset-react": "^7.24.1",
     "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^12.0.2",
     "html-webpack-plugin": "^5.6.0",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
@@ -51,6 +52,10 @@ This document breaks down the Node modules used in the example environment.
 ### `babel-loader`
 
 > Using latest 9.x version
+
+### `copy-webpack-plugin`
+
+> Using latest 12.x version
 
 ### `html-webpack-plugin`
 

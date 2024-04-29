@@ -4,6 +4,8 @@
  * ===============
  */
 
+const path = require("path");
+
 // Function to merge production config with base config
 const { merge } = require("webpack-merge");
 
@@ -33,9 +35,21 @@ const prod = {
 
         // Webpack plugin to add static files from `./public` to build
         new CopyPlugin({
+            
             patterns: [
-                // Ignores index.html as HtmlWebpackPlugin handles index.html
-                { from: "public", to: ".", globOptions: { ignore: ["**/index.html"] } },
+                {
+                    // Copy statis files from the public directory
+                    from: "public",
+                    
+                    // Paste static files in a new directory inside the distributable
+                    to: "./static",
+                    
+                    // Ignores index.html as HtmlWebpackPlugin handles index.html
+                    globOptions: { ignore: ["**/index.html"] },
+
+                    // Stops errors when public folder has only index.html
+                    noErrorOnMissing: true
+                },
             ],
         }),
 
