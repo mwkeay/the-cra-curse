@@ -19,7 +19,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const common =  {
 
     // Entry point for running the application
-    entry: "./src/index.jsx",
+    entry: "./src/index.js",
 
     // Output configuration
     output: {
